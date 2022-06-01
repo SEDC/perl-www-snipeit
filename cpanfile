@@ -7,7 +7,7 @@ on test => sub {
 };
 
 requires 'Modern::Perl', '';
-requires 'Moo', '';
+requires 'Object::Pad', '';
 requires 'namespace::clean', '';
 requires 'HTTP::Request', '';
 requires 'LWP::UserAgent', '';

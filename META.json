@@ -42,8 +42,7 @@
             "LWP::UserAgent" : "0",
             "Modern::Perl" : "0",
             "Object::Pad" : "0",
-            "namespace::clean" : "0",
-            "perl" : "5.008005"
+            "perl" : "5.26"
          }
       },
       "test" : {
@@ -64,7 +63,7 @@
          "web" : "https://github.com/SEDC/perl-www-snipeit"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_contributors" : [
       "Scott <scott@sedck12.org>"
    ],

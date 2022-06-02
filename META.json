@@ -42,7 +42,7 @@
             "LWP::UserAgent" : "0",
             "Modern::Perl" : "0",
             "Object::Pad" : "0",
-            "perl" : "5.26"
+            "perl" : "v5.26.0"
          }
       },
       "test" : {

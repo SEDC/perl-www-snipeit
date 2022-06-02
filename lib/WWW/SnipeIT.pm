@@ -1,6 +1,6 @@
 package WWW::SnipeIT;
 
-use v5.26;
+use v5.26.0;
 use Modern::Perl '2018'; #5.26
 our $VERSION = '0.02';
 use Object::Pad;

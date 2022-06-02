@@ -1,8 +1,8 @@
 package WWW::SnipeIT;
 
-#use v5.26;
+use v5.26;
 use Modern::Perl '2018'; #5.26
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use Object::Pad;
 use WWW::SnipeIT::Hardware;
 
@@ -36,7 +36,7 @@ WWW::SnipeIT - API Access to Snipe-IT
   my $snipeIT = SnipeIT->new( endpoint => 'http://<mysnipeip>/api/v1/', accessToken => 'mylongapikey');
 
   my $snipe = $snipeIT->snipe();
-  my $result = $snipe->{'hardware'}->getHardwareIDByAssetTag (123);
+  my $result = $snipe->{'hardware'}->getHardwareIDByAssetTag(123);
   say $result;
 
 
@@ -52,9 +52,6 @@ WWW::SnipeIT - API Access to Snipe-IT
   my $searchString = "ChromeBook";
   my $categoryID = 3;
   my $serialNumber = "abc1234";
- 
- 
-  my $snipe = $test->snipe();
 
   warn Dumper($snipe->{'hardware'}->getHardwareIDByAssetTag($assetTag));
   warn Dumper($snipe->{'hardware'}->getHardwareByAssetTag($assetTag));

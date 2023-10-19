@@ -3,7 +3,7 @@ use v5.26;
 use Object::Pad;
 use WWW::SnipeIT::Hardware;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 class SnipeIT {
   

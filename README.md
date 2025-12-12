@@ -26,8 +26,6 @@ WWW::SnipeIT - API Access to Snipe-IT
     my $categoryID = 3;
     my $serialNumber = "abc1234";
 
-    warn Dumper($snipe->{'hardware'}->getHardware('location_id' => 1));
-
     warn Dumper($snipe->{'hardware'}->getHardwareIDByAssetTag($assetTag));
     warn Dumper($snipe->{'hardware'}->getHardwareByAssetTag($assetTag));
     warn Dumper($snipe->{'hardware'}->getAssetTagByHardwareID($hardwareID));
@@ -43,32 +41,16 @@ WWW::SnipeIT - API Access to Snipe-IT
 
     warn Dumper($snipe->{'hardware'}->getHardwareByCategory($categoryID));
 
-    my $users = $snipe->{'users'}->getUsers();
-    ## $user_id comes from $users
-    my $userAssets = $snipe->{'users'}->getUsersAssets($user_id);
-
 # DESCRIPTION
 
-WWW::SnipeIT is a perl module for accessing the API. It doesnt have all the api features just enough for what I needed.
-
-Snipe-IT is an asset inventory system.
-
-https://snipeitapp.com/
-
-API Documentation:
-https://snipe-it.readme.io/docs/introduction
+Snipe-IT ia a asset inventory management system that can be self-hosted or cloud-hosted. It has a REST API and this module is an easy access to it.
+\[https://snipeitapp.com/\](https://snipeitapp.com/)
 
 # AUTHOR
 
 Scott <scotth@cpan.org>
 
-# COPYRIGHT
-
-Copyright 2022- Scott
-
 # LICENSE
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
-
-# SEE ALSO
